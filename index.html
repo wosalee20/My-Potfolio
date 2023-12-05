@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>My Portfolio</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="mediaqueries.css" />
+		<link rel="stylesheet" href="bubbles.css" />
+	</head>
+	<body>
+		<!-- bubbles -->
+		<div id="background-wrap">
+			<div class="bubble x1"></div>
+			<div class="bubble x2"></div>
+			<div class="bubble x3"></div>
+			<div class="bubble x4"></div>
+			<div class="bubble x5"></div>
+			<div class="bubble x6"></div>
+			<div class="bubble x7"></div>
+			<div class="bubble x8"></div>
+			<div class="bubble x9"></div>
+			<div class="bubble x10"></div>
+		</div>
+		<!-- bubbles -->
+		<nav id="desktop-nav">
+			<div class="logo">Wosa Victory</div>
+			<div>
+				<ul class="nav-links">
+					<li><a href="#about">About</a></li>
+					<li><a href="#experience">Experience</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+		<nav id="hamburger-nav">
+			<div class="logo">Wosa Victory</div>
+			<div class="hamburger-menu">
+				<div class="hamburger-icon" onclick="toggleMenu()">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<ul class="menu-links">
+					<li><a href="#about" onclick="toggleMenu()">About</a></li>
+					<li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+					<li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+					<li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<section id="profile">
+			<div class="section__pic-container">
+				<img
+					src="./assets/profile-photo.jpg"
+					alt="Wosa profile picture"
+					class="profile-image"
+				/>
+			</div>
+			<div class="section__text">
+				<p class="section__text__p1">Hello I'm</p>
+				<h1 class="title">Wosa Victory</h1>
+				<p class="section__text__p2">FullStack Developer</p>
+				<div class="btn-container">
+					<button
+						class="btn btn-color-2"
+						onclick="window.open('./assets/resume-example.pdf')"
+					>
+						Download CV
+					</button>
+					<button class="btn btn-color-1" onclick="location.href='./#contact'">
+						Contact Me
+					</button>
+				</div>
+				<div id="socials-container">
+					<img
+						src="./assets/linkedin.png"
+						alt="my lindin profile"
+						class="icon"
+						onclick="location.href='https://linkedin.com/'"
+					/>
+					<img
+						src="./assets/github.png"
+						alt="my github profile"
+						class="icon"
+						onclick="location.href='https://github.com/wosalee20/'"
+					/>
+				</div>
+			</div>
+		</section>
+		<section id="about">
+			<p class="section__text__p1">Get to Know More</p>
+			<h1 class="title">About Me</h1>
+			<div class="section-container">
+				<div class="section__pic-container">
+					<img
+						src="./assets/about-pic.jpg"
+						alt="profile picture"
+						class="about-pic"
+					/>
+				</div>
+				<div class="about-details-container">
+					<div class="about-container">
+						<div class="details-container">
+							<img
+								src="./assets/experience.png"
+								alt="experience icon"
+								class="icon"
+							/>
+							<h3>Experience</h3>
+							<p>
+								8 months <br />
+								FullStack Developer
+							</p>
+						</div>
+						<div class="details-container">
+							<img
+								src="./assets/education.png"
+								alt="education icon"
+								class="icon"
+							/>
+							<h3>Education</h3>
+							<p>
+								B.sc. Bachelors Degree <br />
+								In Psychology
+							</p>
+						</div>
+					</div>
+					<div class="text-container">
+						<p>
+							I am Wosa Victory, a dedicated FullStack developer with 1 year of
+							hands-on experience.<br />
+							Proficient in HTML, CSS, JavaScript, React, PHP, and Node.js, I
+							specialize in crafting engaging and interactive user
+							experiences.<br />
+							My journey in the tech industry has been driven by a passion for
+							creating seamless and visually appealing frontend solutions.<br />
+							I excel in transforming client requirements into well-executed and
+							functional web applications.<br />
+							As a full-stack developer, I bring a holistic understanding of the
+							development process, ensuring the delivery of robust and
+							user-friendly interfaces.<br />
+							Whether it's building responsive websites or dynamic web
+							applications, I am committed to delivering high-quality solutions
+							that meet both client and user expectations.
+						</p>
+					</div>
+				</div>
+			</div>
+			<img
+				src="./assets/arrow.png"
+				alt="Arrow icon"
+				class="icon arrow"
+				onclick="location.href='./#experience'"
+			/>
+		</section>
+		<section id="experience">
+			<p class="section__text__p1">Explore My</p>
+			<h1 class="title">Experience</h1>
+			<div class="experience-details-container">
+				<div class="about-container">
+					<div class="details-container">
+						<h2 class="experience-sub-title">Frontend Development</h2>
+						<div class="article-container">
+							<article>
+								<img
+									src="./assets/checkmark.png"
+									alt="Experience icon"
+									class="icon"
+								/>
+								<div>
+									<h3>HTML</h3>
+									<p>Experienced</p>
+								</div>
+							</article>
+							<article>
+								<img
+									src="./assets/checkmark.png"
+									alt="Experience icon"
+									class="icon"
+								/>
+								<div>
+									<h3>CSS</h3>
+									<p>Experienced</p>
+								</div>
+							</article>
+							<article>
+								<img
+									src="./assets/checkmark.png"
+									alt="Experience icon"
+									class="icon"
+								/>
+								<div>
+									<h3>Git</h3>
+									<p>Intermediate</p>
+								</div>
+							</article>
+							<article>
+								<img
+									src="./assets/checkmark.png"
+									alt="Experience icon"
+									class="icon"
+								/>
+								<div>
+									<h3>JavaScript</h3>
+									<p>Experienced</p>
+								</div>
+							</article>
+							<article>
+								<img
+									src="./assets/checkmark.png"
+									alt="Experience icon"
+									class="icon"
+								/>
+								<div>
+									<h3>React</h3>
+									<p>Intermediate</p>
+								</div>
+							</article>
+							<article>
+								<img
+									src="./assets/checkmark.png"
+									alt="Experience icon"
+									class="icon"
+								/>
+								<div>
+									<h3>Tailwind</h3>
+									<p>Basic</p>
+								</div>
+							</article>
+						</div>
+					</div>
+					<div class="details-container">
+						<h2 class="experience-sub-title">Backend Development</h2>
+						<div class="article-container">
+							<article>
+								<img
+									src="./assets/checkmark.png"
+									alt="Experience icon"
+									class="icon"
+								/>
+								<div>
+									<h3>MongoDB</h3>
+									<p>Basic</p>
+								</div>
+							</article>
+							<article>
+								<img
+									src="./assets/checkmark.png"
+									alt="Experience icon"
+									class="icon"
+								/>
+								<div>
+									<h3>Node JS</h3>
+									<p>Intermediate</p>
+								</div>
+							</article>
+							<article>
+								<img
+									src="./assets/checkmark.png"
+									alt="Experience icon"
+									class="icon"
+								/>
+								<div>
+									<h3>Express JS</h3>
+									<p>Intermediate</p>
+								</div>
+							</article>
+							<article>
+								<img
+									src="./assets/checkmark.png"
+									alt="Experience icon"
+									class="icon"
+								/>
+								<div>
+									<h3>PHP</h3>
+									<p>Basic</p>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+			<img
+				src="./assets/arrow.png"
+				alt="Arrow icon"
+				class="icon arrow"
+				onclick="location.href='./#projects'"
+			/>
+		</section>
+		<section id="projects">
+			<p class="section__text__p1">Browse My Recent</p>
+			<h1 class="title">Projects</h1>
+			<div class="experience-details-container">
+				<div class="about-container">
+					<div class="details-container color-container">
+						<div class="article-container">
+							<img
+								src="./assets/Rockman-project.png"
+								alt="Project 1"
+								class="project-img"
+							/>
+						</div>
+						<h2 class="experience-sub-title project-title">
+							Rockman Website Clone
+						</h2>
+						<h3>Stack: Html and Css.</h3>
+						<div class="btn-container">
+							<button
+								class="btn btn-color-2 project-btn"
+								onclick="location.href='https://github.com/wosalee20/project-201'"
+							>
+								Github
+							</button>
+							<button
+								class="btn btn-color-2 project-btn"
+								onclick="location.href='https://wosalee20.github.io/project-201/'"
+							>
+								Live Demo
+							</button>
+						</div>
+					</div>
+					<div class="details-container color-container">
+						<div class="article-container">
+							<img
+								src="./assets/Girlfriend's-day-card.png"
+								alt="Project 2"
+								class="project-img"
+							/>
+						</div>
+						<h2 class="experience-sub-title project-title">Birthday Card</h2>
+						<h3>Stack: Html, Css and JavaScript</h3>
+						<div class="btn-container">
+							<button
+								class="btn btn-color-2 project-btn"
+								onclick="location.href='https://github.com/wosalee20/miflower'"
+							>
+								Github
+							</button>
+							<button
+								class="btn btn-color-2 project-btn"
+								onclick="location.href='https://wosalee20.github.io/miflower/'"
+							>
+								Live Demo
+							</button>
+						</div>
+					</div>
+					<div class="details-container color-container">
+						<div class="article-container">
+							<img
+								src="./assets/degital-clock project.png"
+								alt="Project 3"
+								class="project-img"
+							/>
+						</div>
+						<h2 class="experience-sub-title project-title">Digital Clock</h2>
+						<h3>Stack: Html, Css and JavaScript</h3>
+						<div class="btn-container">
+							<button
+								class="btn btn-color-2 project-btn"
+								onclick="location.href='https://github.com/wosalee20/digitalclock'"
+							>
+								Github
+							</button>
+							<button
+								class="btn btn-color-2 project-btn"
+								onclick="location.href='https://wosalee20.github.io/digitalclock'"
+							>
+								Live Demo
+							</button>
+						</div>
+					</div>
+					<div class="details-container color-container">
+						<div class="article-container">
+							<img
+								src="./assets/Rock-paper-scissors .png"
+								alt="Project 4"
+								class="project-img"
+							/>
+						</div>
+						<h2 class="experience-sub-title project-title">
+							Rock-paper-scissors Game
+						</h2>
+						<h3>Stack: Html, Css and JavaScript</h3>
+						<div class="btn-container">
+							<button
+								class="btn btn-color-2 project-btn"
+								onclick="location.href='https://github.com/wosalee20/rock-paper-scissors'"
+							>
+								Github
+							</button>
+							<button
+								class="btn btn-color-2 project-btn"
+								onclick="location.href='https://wosalee20.github.io/rock-paper-scissors/'"
+							>
+								Live Demo
+							</button>
+						</div>
+					</div>
+					<div class="details-container color-container">
+						<div class="article-container">
+							<img
+								src="./assets/snake-game.jpg"
+								alt="Project 5"
+								class="project-img"
+							/>
+						</div>
+						<h2 class="experience-sub-title project-title">Snake Game</h2>
+						<h3>Stack: Html, Css and JavaScript</h3>
+						<div class="btn-container">
+							<button
+								class="btn btn-color-2 project-btn"
+								onclick="location.href='https://github.com/wosalee20/snakeGame'"
+							>
+								Github
+							</button>
+							<button
+								class="btn btn-color-2 project-btn"
+								onclick="location.href='https://wosalee20.github.io/snakeGame/'"
+							>
+								Live Demo
+							</button>
+						</div>
+					</div>
+					<div class="details-container color-container">
+						<div class="article-container">
+							<img
+								src="./assets/eat-n-split.jpg"
+								alt="Project 6"
+								class="project-img"
+							/>
+						</div>
+						<h2 class="experience-sub-title project-title">Eat and Split</h2>
+						<h3>Stack: React.js</h3>
+						<div class="btn-container">
+							<button
+								class="btn btn-color-2 project-btn"
+								onclick="location.href='https://github.com/wosalee20/Eat-n-split'"
+							>
+								Github
+							</button>
+							<button
+								class="btn btn-color-2 project-btn"
+								onclick="location.href='https://wosalee20.github.io/Eat-n-split/'"
+							>
+								Live Demo
+							</button>
+						</div>
+					</div>
+					<div class="details-container color-container">
+						<div class="article-container">
+							<img
+								src="./assets/Far-away.jpg"
+								alt="Project 7"
+								class="project-img"
+							/>
+						</div>
+						<h2 class="experience-sub-title project-title">Far Away App</h2>
+						<h3>Stack: React.js</h3>
+						<div class="btn-container">
+							<button
+								class="btn btn-color-2 project-btn"
+								onclick="location.href='https://github.com/wosalee20/Far-Away'"
+							>
+								Github
+							</button>
+							<button
+								class="btn btn-color-2 project-btn"
+								onclick="location.href='https://wosalee20.github.io/Far-Away/'"
+							>
+								Live Demo
+							</button>
+						</div>
+					</div>
+					<div class="details-container color-container">
+						<div class="article-container">
+							<img
+								src="./assets/shopify-hacathon.jpg"
+								alt="Project 8"
+								class="project-img"
+							/>
+						</div>
+						<h2 class="experience-sub-title project-title">
+							Shopify Admin Dashboard Clone
+						</h2>
+						<h3>Stack: Html, Css and JavaScript</h3>
+						<div class="btn-container">
+							<button
+								class="btn btn-color-2 project-btn"
+								onclick="location.href='https://github.com/wosalee20/hacathon-shopify'"
+							>
+								Github
+							</button>
+							<button
+								class="btn btn-color-2 project-btn"
+								onclick="location.href='https://wosalee20.github.io/hacathon-shopify/'"
+							>
+								Live Demo
+							</button>
+						</div>
+					</div>
+					<div class="details-container color-container">
+						<div class="article-container">
+							<img
+								src="./assets/use-popcorn.jpg"
+								alt="Project 9"
+								class="project-img"
+							/>
+						</div>
+						<h2 class="experience-sub-title project-title">Movie App</h2>
+						<h3>Stack: React.js</h3>
+						<div class="btn-container">
+							<button
+								class="btn btn-color-2 project-btn"
+								onclick="location.href='#'"
+							>
+								Coming Soon...
+							</button>
+							<button
+								class="btn btn-color-2 project-btn"
+								onclick="location.href='#'"
+							>
+								Coming Soon...
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<img
+				src="./assets/arrow.png"
+				alt="Arrow icon"
+				class="icon arrow"
+				onclick="location.href='./#contact'"
+			/>
+		</section>
+		<section id="contact">
+			<p class="section__text__p1">Get in Touch</p>
+			<h1 class="title">Contact Me</h1>
+			<div class="contact-info-upper-container">
+				<div class="contact-info-container">
+					<img
+						src="./assets/email.png"
+						alt="Email icon"
+						class="icon contact-icon email-icon"
+					/>
+					<p>
+						<a href="mailto:examplemail@gmail.com">Victorywosa@gmail.com</a>
+					</p>
+				</div>
+				<div class="contact-info-container">
+					<img
+						src="./assets/linkedin.png"
+						alt="LinkedIn icon"
+						class="icon contact-icon"
+					/>
+					<p><a href="https://www.linkedin.com">LinkedIn</a></p>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<nav>
+				<div class="nav-links-container">
+					<ul class="nav-links">
+						<li><a href="#about">About</a></li>
+						<li><a href="#experience">Experience</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+			<p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+		</footer>
+		<script src="script.js"></script>
+	</body>
+</html>
