@@ -69,6 +69,11 @@
 }
 
 @media screen and (max-width: 600px) {
+	.switch-icon {
+		width: 2rem;
+		height: auto;
+		margin-bottom: -30%;
+	}
 	.profile-image {
 		width: 15rem;
 		height: 15rem;
@@ -133,5 +138,8 @@
 		width: 15rem;
 		height: 15rem;
 		margin-left: 20%;
+	}
+	.section__text {
+		margin-top: 30%;
 	}
 }
