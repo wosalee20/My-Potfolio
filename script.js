@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+
 	function toggleMenu() {
 		const menu = document.querySelector(".menu-links");
 		const icon = document.querySelector(".hamburger-icon");
@@ -15,4 +15,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	const darkModeButton = document.querySelector(".switch-btn");
 	darkModeButton.addEventListener("click", toggleDarkMode);
-});
+
